@@ -180,8 +180,8 @@ class NotionService {
         fs.writeFileSync(file, JSON.stringify(data, null, 2));
     }
 
-    dbinsert = (data) => {
-        const db = this.dbGet();
+    dbinsert = async (data) => {
+        const db = await this.dbGet();
         db.push(data);
         this.dbSave(db);
     }
