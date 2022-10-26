@@ -1,5 +1,5 @@
 {
-  "name": "libs",
+  "name": "@kamerrezz/libs",
   "version": "1.0.0",
   "description": "libs basic",
   "main": "src/index.js",
