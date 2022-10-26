@@ -281,4 +281,4 @@ class NotionService {
     }
 }
 
-module.exports = Notion;
+module.exports = NotionService;
