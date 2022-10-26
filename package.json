@@ -1,0 +1,13 @@
+{
+  "name": "libs",
+  "version": "1.0.0",
+  "description": "libs basic",
+  "main": "src/index.js",
+  "repository": "https://github.com/KamerrEzz/libs.git",
+  "author": "Kamerr Ezz <kamerr_oficial@hotmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@notionhq/client": "^2.2.1"
+  }
+}
