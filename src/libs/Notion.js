@@ -139,7 +139,7 @@ class NotionService {
 
     dbFind = (query) => {
         return new Promise(async (resolve, reject) => {
-            const data = this.dbGet();
+            const data = await this.dbGet();
             const keys = Object.keys(query);
             const values = Object.values(query);
             const result = data.filter((item) => {
