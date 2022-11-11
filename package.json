@@ -6,6 +6,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "prepare": "npm run build",
+    "prebuild": "npm run clean",
     "test": "ts-node-dev --respawn --transpile-only --poll ./src/index.ts",
     "lint": "prettier --write .",
     "build": "tsc"
