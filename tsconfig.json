@@ -15,7 +15,8 @@
 		"skipDefaultLibCheck": true,
 		"resolveJsonModule": true,
 		"declaration": true,
-
+		"incremental": true,
+		"forceConsistentCasingInFileNames": true  
 	},
 	"include": ["src"],
 	"exclude": ["node_modules", "**/*.spec.ts"]

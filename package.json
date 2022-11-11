@@ -8,7 +8,8 @@
     "prepare": "npm run build",
     "test": "ts-node-dev --respawn --transpile-only --poll ./src/index.ts",
     "lint": "prettier --write .",
-    "build": "tsc"
+    "build": "tsc",
+    "clean": "tsc --build --clean"
   },
   "files": [
     "dist/package.json",
