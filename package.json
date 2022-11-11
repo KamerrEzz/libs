@@ -12,10 +12,6 @@
     "prebuild": "npm run clean",
     "clean": "rm -rf ./dist"
   },
-  "files": [
-    "dist/package.json",
-    "dist/src/**"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KamerrEzz/libs.git"
