@@ -1,13 +1,77 @@
 {
-  "name": "@kamerrezz/libs",
+  "name": "libs",
   "version": "1.0.0",
-  "description": "libs basic",
-  "main": "src/index.js",
-  "repository": "https://github.com/KamerrEzz/libs.git",
-  "author": "Kamerr Ezz <kamerr_oficial@hotmail.com>",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "ts-node-dev --respawn --transpile-only --poll ./src/index.ts",
+    "lint": "prettier --write .",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KamerrEzz/libs.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "MIT",
-  "private": true,
+  "bugs": {
+    "url": "https://github.com/KamerrEzz/libs/issues"
+  },
+  "homepage": "https://github.com/KamerrEzz/libs#readme",
+  "packageManager": "yarn@3.2.4",
+  "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-angular": "^17.2.0",
+    "@types/node": "^18.11.9",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn dlx @yarnpkg/doctor && lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.ts": "prettier --write",
+    "*.js": "prettier --write"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-angular"
+    ],
+    "rules": {
+      "scope-case": [
+        2,
+        "always",
+        "pascal-case"
+      ],
+      "type-enum": [
+        2,
+        "always",
+        [
+          "chore",
+          "build",
+          "ci",
+          "docs",
+          "feat",
+          "fix",
+          "perf",
+          "refactor",
+          "revert",
+          "style",
+          "test"
+        ]
+      ]
+    }
+  },
   "dependencies": {
-    "@notionhq/client": "^2.2.1"
+    "@notionhq/client": "^2.2.2"
   }
 }
