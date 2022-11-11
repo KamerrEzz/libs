@@ -11,6 +11,10 @@
     "lint": "prettier --write .",
     "build": "tsc"
   },
+  "files": [
+    "dist/package.json",
+    "dist/src/**"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KamerrEzz/libs.git"
