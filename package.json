@@ -4,6 +4,10 @@
   "description": "",
   "main": "./src/index.ts",
   "types": "./dist/index.d.ts",
+  "files": [
+    "build/package.json",
+    "build/src/**"
+  ],
   "scripts": {
     "prepare": "npm run build",
     "test": "ts-node-dev --respawn --transpile-only --poll ./src/index.ts",
