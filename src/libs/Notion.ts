@@ -7,7 +7,7 @@ class NotionService {
 	db: any;
 	storage: string;
 
-	constructor({ token, databaseId, storage }) {
+	constructor({ token: string, databaseId: string, storage: boolean }) {
 		this.Notion = new Client({
 			auth: token,
 		});
