@@ -5,8 +5,8 @@
   "main": "./src/index.ts",
   "types": "./dist/index.d.ts",
   "files": [
-    "build/package.json",
-    "build/src/**"
+    "dist/package.json",
+    "dist/src/**"
   ],
   "scripts": {
     "prepare": "npm run build",
